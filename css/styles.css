@@ -1,0 +1,107 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    background: rgba(102,102,102,1);
+    margin: 0px;
+    padding: 0;
+}
+
+#name{
+    font-family: 'thundergood', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* begin custom font stuff */
+@font-face {
+    font-family: "thundergood";
+    src: url("css/fonts/thundergood-webfont.ttf");
+    src: 
+    url("css/fonts/thundergood-webfont.woff") format("woff"),
+}
+/* end custom font stuff */
+
+/* Start of navigation bar stuff */
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background: white;
+    color: black;
+}
+
+.content{
+    color: white;
+    margin-top: 30px;
+}
+
+nav#topMenu{
+    list-style: none;
+    padding: 0px;
+}
+
+nav#topMenu li{
+    display: inline;
+}
+/* End of navigation bar stuff */
+
+/* Begin Parallax Effect */
+.wrapper{
+    height: 100vh; /*full height of viewport*/
+    overflow-x: hidden; /*disable hor-scrolling*/
+    overflow-y: auto; /*enable ver-scrolling*/
+    perspective: 2px; /*something idk*/
+}
+
+.section{
+    position: relative; /*children position to parent*/
+    height: 100vh;
+    /* text format stuff*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.parallax::after{
+    /*display and position background*/
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*size and movement of background*/
+    transform: translateZ(-1px) scale(1.6);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.static{
+    background: black;
+}
+
+.bg1::after{
+    background-image: url('../assets/pizzaBackground.jpg');
+}
+
+.bg2::after{
+    background-image: url('../assets/pizzaBackground.jpg');
+}
+/* End Parallax Effect */
