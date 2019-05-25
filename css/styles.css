@@ -5,12 +5,54 @@ body{
     padding: 0;
 }
 
-#name{
+h1{
     font-family: 'thundergood', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
+    font-size: 90px;
+    border: solid;
+    border-width: 2px;
+    padding: 80px;
+}
+
+.sectionTitle{
+    text-decoration: underline;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.description{
+    font-style: italic;
+}
+
+.todaySpecial{
+    text-decoration: underline;
+}
+
+#today{
+    line-height: 50%;
+    display: block;
     font-size: 50px;
     text-align: center;
+    padding: 40px;
+    border: solid;
+    border-left: 0;
+    border-right: 0;
+    border-width: 2px
+}
+
+#subscribe{
+    text-align: left;
+}
+
+#visit{
+    text-align: right;
+}
+
+#visit li{
+    list-style: none;
 }
 
 /* begin custom font stuff */
@@ -18,7 +60,7 @@ body{
     font-family: "thundergood";
     src: url("css/fonts/thundergood-webfont.ttf");
     src: 
-    url("css/fonts/thundergood-webfont.woff") format("woff"),
+    url("css/fonts/thundergood-webfont.woff") format("woff");
 }
 /* end custom font stuff */
 
@@ -76,7 +118,7 @@ nav#topMenu li{
     align-items: center;
     justify-content: center;
     color: white;
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 10px black;
 }
 
 .parallax::after{
@@ -88,20 +130,27 @@ nav#topMenu li{
     bottom: 0;
     left: 0;
     /*size and movement of background*/
-    transform: translateZ(-1px) scale(1.6);
+    transform: translateZ(-1px) scale(1.7);
     background-size: 100%;
     z-index: -1;
 }
 
 .static{
-    background: black;
+    background-image: url('../assets/pizzeria.jpg');
+    background-size: 1500px;
 }
+
+/* .black{ this one isn't working and i got no idea why
+    background-image: black;
+    background-size: 1500px;
+} */
 
 .bg1::after{
     background-image: url('../assets/pizzaBackground.jpg');
 }
 
 .bg2::after{
-    background-image: url('../assets/pizzaBackground.jpg');
+    background-image: url('../assets/brickOven.gif');
+    background-size: 1450px;
 }
 /* End Parallax Effect */
