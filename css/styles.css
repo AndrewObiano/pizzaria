@@ -15,6 +15,7 @@ h1{
     padding: 80px;
 }
 
+/* ##### WHOLE BUNCH OF FONT STUFF ##### */
 .sectionTitle{
     text-decoration: underline;
 }
@@ -54,17 +55,18 @@ h1{
 #visit li{
     list-style: none;
 }
+/* ##### END WHOLE BUNCH OF FONT STUFF ##### */
 
-/* begin custom font stuff */
+/* CUSTOM FONT THING */
 @font-face {
     font-family: "thundergood";
     src: url("css/fonts/thundergood-webfont.ttf");
     src: 
     url("css/fonts/thundergood-webfont.woff") format("woff");
 }
-/* end custom font stuff */
+/* CUSTOM FONT THING */
 
-/* Start of navigation bar stuff */
+/* NAVIGATION BAR STUFF */
 .navbar{
     overflow: hidden;
     background-color: #333;
@@ -100,13 +102,13 @@ nav#topMenu{
 nav#topMenu li{
     display: inline;
 }
-/* End of navigation bar stuff */
+/* END OF NAVIGATION BAR STUFF */
 
-/* Begin Parallax Effect */
+/* PARALLAX EFFECT...WTF IS GOING ON */
 .wrapper{
     height: 100vh; /*full height of viewport*/
     overflow-x: hidden; /*disable hor-scrolling*/
-    overflow-y: auto; /*enable ver-scrolling*/
+    overflow-y: auto; /*enable vert-scrolling*/
     perspective: 2px; /*something idk*/
 }
 
@@ -140,7 +142,7 @@ nav#topMenu li{
     background-size: 1500px;
 }
 
-/* .black{ this one isn't working and i got no idea why
+/* .black{ this bg isn't working and i got no idea why
     background-image: black;
     background-size: 1500px;
 } */
@@ -153,4 +155,4 @@ nav#topMenu li{
     background-image: url('../assets/brickOven.gif');
     background-size: 1450px;
 }
-/* End Parallax Effect */
+/* END OF PARALLAX EFFECT */
